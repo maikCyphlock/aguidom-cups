@@ -1,6 +1,6 @@
 
 
-export function LinearCard({ className, children, title }) {
+export function LinearCard({ className, children, title }: any) {
   return (
     <article className={`${className}`}>
       <h2 className={`text-white text-sm font-bold  uppercase`}>
