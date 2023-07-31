@@ -1,8 +1,10 @@
-import Image from "next/image";
+"use client"
+
 import AtroposCard from "./components/atroposCard";
 import Inscriptions from "./components/Inscriptions";
 import Footer from "./components/Footer";
 import { LinearCard } from "./components/LinearCard";
+import './firebase';
 export default function Home() {
   return (
     <div className="px-2 bg-gradient-to-tr from-transparent to-indigo-950/20">
