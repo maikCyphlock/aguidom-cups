@@ -1,4 +1,4 @@
-export const TrophyIcon = ({ className }) => {
+export const TrophyIcon = ({ className }: any) => {
   return (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 86 91">
       <path fill="#D9D9D9" fillRule="evenodd" d="M24 82.857V91h39v-8.143a2.99 2.99 0 0 1-2.121-.879l-4.693-4.692H29.899l-3.556 4.445A2.995 2.995 0 0 1 24 82.857Z" clipRule="evenodd" />

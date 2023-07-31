@@ -19,7 +19,7 @@ const BackgroundPattern = () => (
   </svg>
 )
 
-export default function atroposCardUser(props) {
+export default function atroposCardUser(props: any) {
   return (
     <div className=" lg:p-12">
 

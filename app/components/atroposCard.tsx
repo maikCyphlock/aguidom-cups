@@ -33,7 +33,7 @@ export default function AtroposCard() {
           <div className="flex items-center justify-center flex-1 gap-2 mb-4">
 
             <div className="z-20 w-32 h-32 lg:w-56 lg:h-56 ">
-              <TrophyIcon />
+              <TrophyIcon className={""} />
             </div>
 
             <h1 className="z-20 flex flex-col text-2xl md:text-4xl lg:text-6xl"><span className="font-thin text-yellow-400">Copa</span> <span className="font-extrabold">Aguidom</span></h1>

@@ -18,10 +18,11 @@ function Inscriptions() {
     email: "",
     dni: "",
     age: "",
-    img: null
+    img: undefined
   })
   const handlerSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    //@ts-ignore
     const formdata: FormdataUser = Object.fromEntries(new FormData(e.target))
     const getUrl = await UploadFileAndGetUrl(formdata.img)
     const newUser = {
@@ -78,7 +79,7 @@ function Inscriptions() {
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-50" htmlFor="img">Foto Tipo carnet</label>
-        <input onChange={handlerChange} value={usersFormdata?.photo} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-indigo-500"
+        <input onChange={handlerChange} value={usersFormdata?.img} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-indigo-500"
           type="file" id="img" name="img" accept="image/png, image/jpeg" />
         <img src={imgUrl} alt="" className='w-full h-full mt-2 rounded-md' />
       </div>
