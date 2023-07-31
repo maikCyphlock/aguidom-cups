@@ -24,8 +24,9 @@ function Inscriptions() {
   })
   const handlerSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    //@ts-ignore
+
     setIsLoading(true)
+    //@ts-ignore
     const formdata: FormdataUser = Object.fromEntries(new FormData(e.target))
 
     const newUser = {
@@ -47,9 +48,10 @@ function Inscriptions() {
     }
 
   }
-  const handlerImageChange = async (e) => {
+  const handlerImageChange = async (e: { target: { files: any; }; }) => {
     const getUrl = await UploadFileAndGetUrl(e.target.files[0])
     setImgUrl(() => getUrl)
+    //@ts-ignore
     setUsersFormdata((prevState) => {
       return {
         ...prevState,
