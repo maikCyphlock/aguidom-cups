@@ -1,6 +1,7 @@
+"use client";
 import "./globals.css";
-import { Inter,Akshar } from "next/font/google";
-
+import { Inter } from "next/font/google";
+import './firebase';
 import "atropos/css";
 
 const inter = Inter({ subsets: ["latin"] });
