@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import React from 'react'
 import AtroposCardUser from '../components/atroposCardUser';
 async function page() {
+    //@ts-ignore
     const supabase = createServerComponentSupabaseClient({ cookies });
 
     const { data: users } = await supabase.from("users").select('*')
