@@ -96,27 +96,27 @@ function Inscriptions() {
     <><form id="suscribe" onSubmit={(e) => handlerSubmit(e)} encType='multipart/form-data' className="w-full max-w-sm p-8 mx-auto border-2 rounded-md shadow-md bg-gradient-to-tr from-transparent to-zinc-600/20 border-zinc-800">
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-50" htmlFor="name">Nombre</label>
-        <input required onChange={handlerChange} value={usersFormdata?.name} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-yellow-500"
+        <input required onChange={handlerChange} value={usersFormdata?.name} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 autofill:bg-slate-800 focus:outline-none focus:border-yellow-500"
           type="text" id="name" name="name" placeholder="Juan" />
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-50" htmlFor="email">Correo electrónico</label>
-        <input required onChange={handlerChange} value={usersFormdata?.email} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-yellow-500"
+        <input required onChange={handlerChange} value={usersFormdata?.email} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 autofill:bg-slate-800 focus:outline-none focus:border-yellow-500"
           type="email" id="email" name="email" placeholder="john@example.com" />
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-50" htmlFor="password">Cédula</label>
-        <input required onChange={handlerChange} value={usersFormdata?.dni} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-yellow-500"
+        <input required onChange={handlerChange} value={usersFormdata?.dni} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 autofill:bg-slate-800 focus:outline-none focus:border-yellow-500"
           type="text" id="dni" name="dni" placeholder="v-29340532" />
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-50" htmlFor="age">Edad</label>
-        <input required onChange={handlerChange} value={usersFormdata?.age} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-yellow-500"
+        <input required onChange={handlerChange} value={usersFormdata?.age} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 autofill:bg-slate-800 focus:outline-none focus:border-yellow-500"
           type="text" id="age" name="age" placeholder="12" />
       </div>
       <div className="mb-4">
         <label className="block mb-2 text-sm font-bold text-gray-50" htmlFor="img">Foto Tipo carnet</label>
-        <input required onChange={handlerImageChange} className="w-full px-3 py-2 text-white border rounded-md border-zinc-800 bg-black/20 focus:outline-none focus:border-yellow-500"
+        <input required onChange={handlerImageChange} className="w-full px-3 py-2 text-white border rounded-md autofill:bg-slate-800 border-zinc-800 bg-black/20 focus:outline-none focus:border-yellow-500"
           type="file" id="img" name="img" accept="image/png, image/jpeg" />
         <img src={imgUrl} alt="" className='w-full h-full mt-2 rounded-md aspect-square' />
       </div>
