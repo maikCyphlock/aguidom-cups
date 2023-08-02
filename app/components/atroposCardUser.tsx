@@ -34,7 +34,7 @@ export default function atroposCardUser(props: any) {
 
             <div className="z-30 flex items-center justify-center gap-4">
               <div className="flex-1 ">
-                <TrophyIcon className={"w-12 h-12 lg:w-32 lg:h-32"} />
+                <TrophyIcon className={"w-12 h-12 lg:w-32 lg:h-32 antialiased"} />
               </div>
 
               <h1 className="flex flex-col text-xl md:text-2xl lg:text-4xl"><span className="font-light text-yellow-400">Copa</span> <span className="font-extrabold tracking-wide">Aguidom</span></h1>

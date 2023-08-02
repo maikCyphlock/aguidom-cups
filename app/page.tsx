@@ -28,8 +28,16 @@ export default function Home() {
                 Edad
               </h3>
               <div className="flex items-baseline justify-center my-8">
-                <span className="mr-2 text-4xl font-extrabold">5 - 14</span>
+                <span className="mr-2 text-4xl font-extrabold">4 - 15 </span>
                 <span className="text-gray-500 dark:text-gray-400">Años</span>
+              </div>
+              <h3 className="text-2xl font-thin text-blue-100">
+                Fecha
+              </h3>
+
+              <div className="flex items-baseline justify-center my-8">
+                <span className="mr-2 text-4xl font-extrabold">4 - 15 </span>
+                <span className="text-gray-500 dark:text-gray-400">Agosto</span>
               </div>
 
             </section>
